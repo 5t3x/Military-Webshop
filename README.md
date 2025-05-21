@@ -18,6 +18,12 @@ Ez egy egyszerű **Military Webshop**, amely **HTML**, **CSS (Bootstrap)** és *
 
 ---
 
+## Drótváz
+![Sample Image](https://github.com/5t3x/Military-Webshop/issues/2#issue-3062619942)
+
+
+---
+
 ## UML Diagram
 
 Az alábbiakban egy alap UML diagram látható, amely leírja a **MILITARY WEBSHOP** osztályait és azok struktúráját. A **Product**, **Cart**, **Webshop** és **Termek** osztályok kölcsönhatásba lépnek, hogy lehetővé tegyék a felhasználók számára a termékek és a kosár adataik kezelését.
