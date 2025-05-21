@@ -1,4 +1,12 @@
 import Termek from "./Termek.js";
+import { termekLista } from "./termekLista_2.js";
+
+const kategoriak = [
+    { nev: "Ruhák", kategoria: "ruhak" },
+    { nev: "Kések", kategoria: "kesek" },
+    { nev: "Tartozékok", kategoria: "tartozekok" },
+    { nev: "Ételek", kategoria: "etelek" }
+];
 
 export default class Kategoria {
     megjelenit() {
@@ -27,7 +35,7 @@ export default class Kategoria {
 
     megjelenitTermekek(kategoria, tartalomElem) {
         tartalomElem.innerHTML = "";
-        const szurtTermekek = termekek.filter(t => t.kategoria === kategoria);
+        const szurtTermekek = Termek.filter(t => t.kategoria === kategoria);
         szurtTermekek.forEach((adatok, index) => {
             new Termek(adatok, tartalomElem, index);
         });
