@@ -1,33 +1,31 @@
-
-
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-image: url('Kepek/hatter5.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-image: url("Kepek/hatter5.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 main {
-    max-width: 1200px;
-    margin: 30px auto;
-    padding: 30px;    
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    background-color: rgb(240, 238, 238);
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 30px;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-color: rgb(240, 238, 238);
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
 
 header {
-    text-align: center;
-    font-size: 3rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: #2a2a2a;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #2a2a2a;
 }
 
 .higlight {
@@ -56,13 +54,13 @@ footer {
   bottom: 20px;
   right: 20px;
   padding: 10px 15px;
-  font-size: 20px;
+  font-size: 100px;
   background-color: #007bff;
   color: white;
   border: none;
   border-radius: 50%;
   cursor: pointer;
-  display: none; /* Kezdetben rejtett */
+  display: block; /* Kezdetben rejtett */
 }
 
 #scrollToTopBtn:hover {

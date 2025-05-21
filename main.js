@@ -6,5 +6,6 @@ const kategoria = new Kategoria();
 kategoria.megjelenit();
 const higlight = new Higlight();
 
-ScrollToTopButton();
+const scrollToTopButton = new ScrollToTopButton();
+
 
