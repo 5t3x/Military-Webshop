@@ -1,4 +1,4 @@
-export const termekLista = [
+export const termekista = [
     {
         id: 1,
         nev: "Katonai Taktikai Kabát",
