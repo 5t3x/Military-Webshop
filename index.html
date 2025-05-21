@@ -13,7 +13,7 @@
 
 <body>
     <main>
-        <header>Militaray Websop</header>
+        <header>Military Webhsop</header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">Home</a>
@@ -36,13 +36,29 @@
                     </ul>
                     </li>
                     </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
+                    <button class="btn btn-outline-success" id="kosarButton">
+                        <i class="bi bi-cart-fill"></i> Kosár 🛒<span id="kosarCount" class="badge bg-danger">0</span>
+                    </button>
                 </div>
             </div>
         </nav>
+        <div class="modal fade" id="kosarModal" tabindex="-1" aria-labelledby="kosarModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="kosarModalLabel">Kosár tartalma</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" id="kosarModalContent">
+                        <p>A kosár üres.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Bezárás</button>
+                        <button type="button" class="btn btn-primary">Fizetés</button>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="higlight"></div>
         <article class="tartalom">
             <nav class="navbar bg-body-tertiary">
@@ -56,17 +72,17 @@
                     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
                         aria-labelledby="offcanvasNavbarLabel">
                         <div class="offcanvas-header">
-                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Szűrő</h5>
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Szűrő 🔎</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
                                 aria-label="Close"></button>
                         </div>
                         <div class="offcanvas-body">
                             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">Ár szerint növekvő</a>
-                                </li>
+                                    <button class="dropdown-item" id="rendezes-novekvo">Ár szerint növekvő ⏫</button>
+                                </li><br>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Ár szerint növekvő</a>
+                                    <button class="dropdown-item" id="rendezes-csokkeno">Ár szerint csökkenő ⏬</button>
                                 </li>
                             </ul>
                             <form class="d-flex mt-3" role="search">
