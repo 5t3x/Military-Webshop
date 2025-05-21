@@ -10,7 +10,6 @@ body {
     background-position: center;
 }
 
-
 main {
     max-width: 1200px;
     margin: 30px auto;
@@ -23,7 +22,6 @@ main {
     box-shadow: 0 0 15px rgba(0,0,0,0.3);
 }
 
-
 header {
     text-align: center;
     font-size: 3rem;
@@ -32,26 +30,41 @@ header {
     color: #2a2a2a;
 }
 
-
 .higlight {
-    margin: 20px 0;
+  margin: 20px 0;
 }
 
 .higlight .carousel-inner img {
-    max-height: 400px;
-    object-fit: cover;
-    border-radius: 8px;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
 }
-
 
 .tartalom {
-    padding: 20px 0;
+  padding: 20px 0;
 }
 
-
 footer {
-    text-align: center;
-    padding: 20px 0;
-    color: #777;
-    font-size: 0.9rem;
+  text-align: center;
+  padding: 20px 0;
+  color: #777;
+  font-size: 0.9rem;
+}
+
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  font-size: 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none; /* Kezdetben rejtett */
+}
+
+#scrollToTopBtn:hover {
+  background-color: #0056b3;
 }
