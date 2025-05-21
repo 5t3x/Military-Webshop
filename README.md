@@ -18,25 +18,26 @@ Ez egy egyszerű **Military Webshop**, amely **HTML**, **CSS (Bootstrap)** és *
 
 ## Kategóriák
 
-•	Ruha fajták
-•	Tartozékok (Kulacs, Távcső)
-•	Kések
-•	Ételek
-•	Járművek
-•	BlackMarket (Fegyverek, lőszer, fegyver tartozékok, tank, Minecraft kard szett, vizipisztoly)
+• Ruha fajták
+• Tartozékok (Kulacs, Távcső)
+• Kések
+• Ételek
+• Járművek
+• BlackMarket (Fegyverek, lőszer, fegyver tartozékok, tank, Minecraft kard szett, vizipisztoly)
 
 ## Oldal felépítése
 
-•	Minden kategóriából 10db termék
-•	Szűrése lehetőség
-•	Kezdő képernyőn véletlenszerű legális termékek közül 10 db mint felkapott
-•	BlackMarket esetnél egész weboldal sötét színre vált, felugró ablak mint figyelmeztetés
-•	Kosárban | + | - | törlés lehetőség, összeg számlálás
-•	Vissza az oldal tetejére
+• Minden kategóriából 10db termék
+• Szűrése lehetőség
+• Kezdő képernyőn véletlenszerű legális termékek közül 10 db mint felkapott
+• BlackMarket esetnél egész weboldal sötét színre vált, felugró ablak mint figyelmeztetés
+• Kosárban | + | - | törlés lehetőség, összeg számlálás
+• Vissza az oldal tetejére
 
 ---
 
 ## Drótváz
+
 ![Click me](https://github.com/5t3x/Military-Webshop/issues/2#issue-3062619942)
 
 ---
@@ -47,25 +48,23 @@ Az alábbiakban egy alap UML diagram látható, amely leírja a **MILITARY WEBSH
 
 ```plaintext
 +--------------------+        +--------------------+         +---------------------+
-|      Product       |        |       Cart         |         |      Webshop        |
+|      Termek        |        |       Cart         |         |       Webshop       |
 +--------------------+        +--------------------+         +---------------------+
 | - id: int          |        | - products: array  |         | - products: array   |
-| - name: string     |        | - total: float     |         | - cart: Cart        |
-| - description: str |        +--------------------+         +---------------------+
-| - price: float     |        | + addProduct()     |         | + addProduct()      |
-| - category: string |        | + removeProduct()  |         | + displayProducts() |
+| - nev: string      |        | - total: float     |         | - cart: Cart        |
+| - leiras: str      |        +--------------------+         +---------------------+
+| - ar: float        |        | + addProduct()     |         | + addProduct()      |
+| - kategoria: string|        | + removeProduct()  |         | + displayProducts() |
 +--------------------+        | + calculateTotal() |         | + sortProducts()    |
-| + displayProduct() |        | + displayCart()    |         | + viewCart()        |
+| + displayTermek()  |        | + displayCart()    |         | + viewCart()        |
 +--------------------+        +--------------------+         +---------------------+
 
+
 +--------------------+
-|      Termek        |
+|      Termekek      |
 +--------------------+
-| - id: int          |
-| - name: string     |
-| - description: str |
-| - price: float     |
-| - category: string |
+| - TermekLista: array|
+| - szElem: HTMLDom elem|
 +--------------------+
 | + displayTermek()  |
 +--------------------+
