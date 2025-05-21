@@ -4,23 +4,24 @@
 
 ---
 
-## UML + Description 
+## UML + Leírás 
 
-This is a simple **Military Webshop** built using **HTML**, **CSS (Bootstrap)**, and **JavaScript**. The webshop allows users to browse military-related products, sort them by price, add items to a shopping cart, and view their cart—all without a backend.
+Ez egy egyszerű **Military Webshop**, amely **HTML**, **CSS (Bootstrap)** és **JavaScript** felhasználásával készült. A webshop lehetővé teszi a felhasználók számára, hogy katonai jellegű termékeket böngésszenek, sorrendbe rendezzék őket ár alapján, hozzáadják azokat a kosárhoz, és megtekinthessék a kosarukat — mindezt háttér nélküli működéssel.
 
-## Features
-- **Browse Products**: Display various military-related products.
-- **Sort Products**: Sort products by price in ascending or descending order.
-- **Add to Cart**: Add selected products to a shopping cart.
-- **Cart Management**: View cart details and total price.
-- **Clear Cart**: Clear all items from the cart.
+## Funkciók
+- **Termékek böngészése**: Különböző katonai jellegű termékek megjelenítése.
+- **Termékek rendezése**: A termékek ár szerinti növekvő vagy csökkenő rendezése.
+- **Kosárhoz adás**: Kiválasztott termékek hozzáadása a kosárhoz.
+- **Kosárkezelés**: A kosár tartalmának és a teljes ár megtekintése.
+- **Kosár ürítése**: Az összes termék eltávolítása a kosárból.
 
 ---
 
 ## UML Diagram
 
-Below is a basic UML diagram to describe the classes and structure of the **MILITARY WEBSHOP**. The **Product**, **Cart**, **Webshop** and **Termek** classes interact to allow users to manage products and cart data.
+Az alábbiakban egy alap UML diagram látható, amely leírja a **MILITARY WEBSHOP** osztályait és azok struktúráját. A **Product**, **Cart**, **Webshop** és **Termek** osztályok kölcsönhatásba lépnek, hogy lehetővé tegyék a felhasználók számára a termékek és a kosár adataik kezelését.
 
+```plaintext
 +--------------------+        +--------------------+         +---------------------+
 |      Product       |        |       Cart         |         |      Webshop        |
 +--------------------+        +--------------------+         +---------------------+

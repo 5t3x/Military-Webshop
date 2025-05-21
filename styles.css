@@ -1,3 +1,9 @@
+body {
+    width: 80%;
+    max-width: 800px;
+}
+
+
 /* A carousel konténer szélességét és középre igazítását állítjuk */
 #carouselExampleIndicators {
   max-width: 100%; /* A carousel szélessége */
