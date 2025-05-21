@@ -10,7 +10,7 @@ export default class Higlight {
         const card = document.querySelector(".higlight")
 
         card.innerHTML = `
-        <div id="carouselExampleIndicators" class="carousel slide">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -25,7 +25,7 @@ export default class Higlight {
             <img src="Kepek/fegyverek.jpg" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-            <img src="Kepek/noiruha.jpg" class="d-block w-100" alt="...">
+            <img src="Kepek/noiruha2.jpg" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
             <img src="Kepek/helicopter.jpg" class="d-block w-100" alt="...">
