@@ -1,0 +1,12 @@
+/* A carousel konténer szélességét és középre igazítását állítjuk */
+#carouselExampleIndicators {
+  max-width: 100%; /* A carousel szélessége */
+  margin: 0 auto;  /* Középre igazítás */
+}
+
+/* A képek magasságának beállítása */
+.carousel-item img {
+  width: 100%;     /* A kép szélessége */
+  height: 500px;   /* A kép magassága */
+  object-fit: cover; /* A kép kitöltse a rendelkezésre álló teret, miközben megőrzi az arányait */
+}
