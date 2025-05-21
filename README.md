@@ -4,21 +4,40 @@
 
 ---
 
-## UML + Leírás 
+## UML + Leírás
 
 Ez egy egyszerű **Military Webshop**, amely **HTML**, **CSS (Bootstrap)** és **JavaScript** felhasználásával készült. A webshop lehetővé teszi a felhasználók számára, hogy katonai jellegű termékeket böngésszenek, sorrendbe rendezzék őket ár alapján, hozzáadják azokat a kosárhoz, és megtekinthessék a kosarukat — mindezt háttér nélküli működéssel.
 
 ## Funkciók
-- **Termékek böngészése**: Különböző katonai jellegű termékek megjelenítése.
-- **Termékek rendezése**: A termékek ár szerinti növekvő vagy csökkenő rendezése.
-- **Kosárhoz adás**: Kiválasztott termékek hozzáadása a kosárhoz.
-- **Kosárkezelés**: A kosár tartalmának és a teljes ár megtekintése.
-- **Kosár ürítése**: Az összes termék eltávolítása a kosárból.
+
+• **Termékek böngészése**: Különböző katonai jellegű termékek megjelenítése.
+• **Termékek rendezése**: A termékek ár szerinti növekvő vagy csökkenő rendezése.
+• **Kosárhoz adás**: Kiválasztott termékek hozzáadása a kosárhoz.
+• **Kosárkezelés**: A kosár tartalmának és a teljes ár megtekintése.
+• **Kosár ürítése**: Az összes termék eltávolítása a kosárból.
+
+## Kategóriák
+
+•	Ruha fajták
+•	Tartozékok (Kulacs, Távcső)
+•	Kések
+•	Ételek
+•	Járművek
+•	BlackMarket (Fegyverek, lőszer, fegyver tartozékok, tank, Minecraft kard szett, vizipisztoly)
+
+## Oldal felépítése
+
+•	Minden kategóriából 10db termék
+•	Szűrése lehetőség
+•	Kezdő képernyőn véletlenszerű legális termékek közül 10 db mint felkapott
+•	BlackMarket esetnél egész weboldal sötét színre vált, felugró ablak mint figyelmeztetés
+•	Kosárban | + | - | törlés lehetőség, összeg számlálás
+•	Vissza az oldal tetejére
 
 ---
 
 ## Drótváz
-![Sample Image]([https://example.com/path-to-image.jpg](https://github.com/5t3x/Military-Webshop/issues/2#issue-3062619942))
+![Sample Image](https://github.com/5t3x/Military-Webshop/issues/2#issue-3062619942)
 
 
 ---
@@ -40,17 +59,17 @@ Az alábbiakban egy alap UML diagram látható, amely leírja a **MILITARY WEBSH
 | + displayProduct() |        | + displayCart()    |         | + viewCart()        |
 +--------------------+        +--------------------+         +---------------------+
 
-+--------------------+        
-|      Termek        |         
-+--------------------+        
-| - id: int          |        
-| - name: string     |        
-| - description: str |        
-| - price: float     |        
-| - category: string |        
-+--------------------+        
-| + displayTermek()  |        
-+--------------------+        
++--------------------+
+|      Termek        |
++--------------------+
+| - id: int          |
+| - name: string     |
+| - description: str |
+| - price: float     |
+| - category: string |
++--------------------+
+| + displayTermek()  |
++--------------------+
 
 +--------------------+
 |    TermekLista     |
@@ -58,7 +77,7 @@ Az alábbiakban egy alap UML diagram látható, amely leírja a **MILITARY WEBSH
 | - Lista[]: array   |
 +--------------------+
 
-+------------------------+    
++------------------------+
 |       Highlight        |
 +------------------------+
 |                        |
@@ -69,3 +88,4 @@ Az alábbiakban egy alap UML diagram látható, amely leírja a **MILITARY WEBSH
 ---
 
 Kiss Máté, Ghéczy Bálint, Ghéczy Balázs
+```
