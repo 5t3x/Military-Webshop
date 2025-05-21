@@ -1,0 +1,61 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36" version="27.0.5">
+  <diagram name="1 oldal" id="e1cD9u9wrlR8hbeCl4gc">
+    <mxGraphModel dx="969" dy="667" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="-EY3Yka_PqmRJfYrWoqJ-2" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="760" height="1160" as="geometry" />
+        </mxCell>
+        <mxCell id="-EY3Yka_PqmRJfYrWoqJ-3" value="&lt;font style=&quot;font-size: 22px;&quot;&gt;Military webshop&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="760" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="-EY3Yka_PqmRJfYrWoqJ-4" value="Nav" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="110" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-EY3Yka_PqmRJfYrWoqJ-5" value="Nav" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="110" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-EY3Yka_PqmRJfYrWoqJ-6" value="Nav" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="110" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-EY3Yka_PqmRJfYrWoqJ-7" value="Adatok" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="740" y="52.5" width="40" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="-EY3Yka_PqmRJfYrWoqJ-8" value="&lt;font style=&quot;font-size: 25px;&quot;&gt;High lights&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="170" width="760" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="-EY3Yka_PqmRJfYrWoqJ-9" value="Temakor" style="rounded=1;whiteSpace=wrap;html=1;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="60" y="490" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-EY3Yka_PqmRJfYrWoqJ-10" value="Aru" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="575" width="220" height="245" as="geometry" />
+        </mxCell>
+        <mxCell id="-EY3Yka_PqmRJfYrWoqJ-11" value="Aru" style="rounded=1;whiteSpace=wrap;html=1;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="310" y="575" width="220" height="245" as="geometry" />
+        </mxCell>
+        <mxCell id="-EY3Yka_PqmRJfYrWoqJ-12" value="Aru" style="rounded=1;whiteSpace=wrap;html=1;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="560" y="575" width="220" height="245" as="geometry" />
+        </mxCell>
+        <mxCell id="-EY3Yka_PqmRJfYrWoqJ-13" value="Aru" style="rounded=1;whiteSpace=wrap;html=1;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="560" y="850" width="220" height="245" as="geometry" />
+        </mxCell>
+        <mxCell id="-EY3Yka_PqmRJfYrWoqJ-14" value="Aru" style="rounded=1;whiteSpace=wrap;html=1;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="310" y="850" width="220" height="245" as="geometry" />
+        </mxCell>
+        <mxCell id="-EY3Yka_PqmRJfYrWoqJ-15" value="Aru" style="rounded=1;whiteSpace=wrap;html=1;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="58" y="850" width="220" height="245" as="geometry" />
+        </mxCell>
+        <mxCell id="-EY3Yka_PqmRJfYrWoqJ-16" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;Footer&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="1140" width="760" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-EY3Yka_PqmRJfYrWoqJ-17" value="Szuro" style="rounded=1;whiteSpace=wrap;html=1;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="722" y="490" width="58" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-EY3Yka_PqmRJfYrWoqJ-19" value="&lt;span style=&quot;font-size: 27px;&quot;&gt;🛒&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="740" y="117.5" width="40" height="45" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
