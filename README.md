@@ -37,8 +37,7 @@ Ez egy egyszerű **Military Webshop**, amely **HTML**, **CSS (Bootstrap)** és *
 ---
 
 ## Drótváz
-![Sample Image](https://github.com/5t3x/Military-Webshop/issues/2#issue-3062619942)
-
+![Click me](https://github.com/5t3x/Military-Webshop/issues/2#issue-3062619942)
 
 ---
 
