@@ -9,6 +9,11 @@ const higlight = new Higlight();
 const termek = new Termekek();
 const kosar =new Kosar();
 
+<<<<<<< HEAD
 kategoria.megjelenit();
 ScrollToTopButton();
+=======
+const scrollToTopButton = new ScrollToTopButton();
+
+>>>>>>> 6824c0581f61fd428e390c0ea69008f372cca079
 
