@@ -4,11 +4,12 @@
 
 ---
 
-## UML + Leírás 
+## UML + Leírás
 
 Ez egy egyszerű **Military Webshop**, amely **HTML**, **CSS (Bootstrap)** és **JavaScript** felhasználásával készült. A webshop lehetővé teszi a felhasználók számára, hogy katonai jellegű termékeket böngésszenek, sorrendbe rendezzék őket ár alapján, hozzáadják azokat a kosárhoz, és megtekinthessék a kosarukat — mindezt háttér nélküli működéssel.
 
 ## Funkciók
+
 - **Termékek böngészése**: Különböző katonai jellegű termékek megjelenítése.
 - **Termékek rendezése**: A termékek ár szerinti növekvő vagy csökkenő rendezése.
 - **Kosárhoz adás**: Kiválasztott termékek hozzáadása a kosárhoz.
@@ -34,17 +35,17 @@ Az alábbiakban egy alap UML diagram látható, amely leírja a **MILITARY WEBSH
 | + displayProduct() |        | + displayCart()    |         | + viewCart()        |
 +--------------------+        +--------------------+         +---------------------+
 
-+--------------------+        
-|      Termek        |         
-+--------------------+        
-| - id: int          |        
-| - name: string     |        
-| - description: str |        
-| - price: float     |        
-| - category: string |        
-+--------------------+        
-| + displayTermek()  |        
-+--------------------+        
++--------------------+
+|      Termek        |
++--------------------+
+| - id: int          |
+| - name: string     |
+| - description: str |
+| - price: float     |
+| - category: string |
++--------------------+
+| + displayTermek()  |
++--------------------+
 
 +--------------------+
 |    TermekLista     |
@@ -52,7 +53,7 @@ Az alábbiakban egy alap UML diagram látható, amely leírja a **MILITARY WEBSH
 | - Lista[]: array   |
 +--------------------+
 
-+------------------------+    
++------------------------+
 |       Highlight        |
 +------------------------+
 |                        |
@@ -63,3 +64,4 @@ Az alábbiakban egy alap UML diagram látható, amely leírja a **MILITARY WEBSH
 ---
 
 Kiss Máté, Ghéczy Bálint, Ghéczy Balázs
+```
