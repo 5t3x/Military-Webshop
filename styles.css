@@ -7,6 +7,8 @@ body {
 
 main {
     max-width: 1000px;
+    background-image: url(Kepek/hatter2.jpg);
+    background: no-repeat;
     margin: 0 auto;
     padding: 20px;
     background-color: white;
