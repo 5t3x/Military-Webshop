@@ -1,23 +1,33 @@
+
+
 body {
-  background-color: #f4f4f4;
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('Kepek/hatter5.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 main {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: white;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 30px;    
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-color: rgb(240, 238, 238);
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
 }
 
 header {
-  text-align: center;
-  font-size: 2rem;
-  padding: 20px 0;
-  font-weight: bold;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #2a2a2a;
 }
 
 .higlight {
