@@ -34,16 +34,22 @@ Az alábbiakban egy alap UML diagram látható, amely leírja a **MILITARY WEBSH
 | + displayProduct() |        | + displayCart()    |         | + viewCart()        |
 +--------------------+        +--------------------+         +---------------------+
 
++--------------------+        
+|      Termek        |         
++--------------------+        
+| - id: int          |        
+| - name: string     |        
+| - description: str |        
+| - price: float     |        
+| - category: string |        
++--------------------+        
+| + displayTermek()  |        
++--------------------+        
+
 +--------------------+
-|      Termek        |
+|    TermekLista     |
 +--------------------+
-| - id: int          |
-| - name: string     |
-| - description: str |
-| - price: float     |
-| - category: string |
-+--------------------+
-| + displayTermek()  |
+| - Lista[]: array   |
 +--------------------+
 
 +------------------------+    
