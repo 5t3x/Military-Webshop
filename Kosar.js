@@ -1,4 +1,4 @@
-import { KosarElem } from "./KosarElem.js";
+import  KosarElem  from "./KosarElem.js";
 
 
 export class Kosar {

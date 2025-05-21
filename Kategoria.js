@@ -15,7 +15,7 @@ export default class Kategoria {
 
         kategoriak.forEach((kat, i) => {
             tartalomElem.insertAdjacentHTML("beforeend", `
-                <div class="card text-center mb-3 kategoria-kartya" style="width: 18rem; display:inline-block; cursor:pointer;" data-kategoria="${kat.kategoria}">
+                <div class="card text-center mb-3 kategoria-kartya" style="width: 17rem; display:inline-block; cursor:pointer;" data-kategoria="${kat.kategoria}">
                     <div class="card-body">
                         <h5 class="card-title">${kat.nev}</h5>
                         <p class="card-text">Válassz kategóriát!</p>
