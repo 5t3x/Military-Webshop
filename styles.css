@@ -1,18 +1,42 @@
 body {
-    width: 80%;
-    max-width: 800px;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
 }
 
-
-/* A carousel konténer szélességét és középre igazítását állítjuk */
-#carouselExampleIndicators {
-  max-width: 100%; /* A carousel szélessége */
-  margin: 0 auto;  /* Középre igazítás */
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* A képek magasságának beállítása */
-.carousel-item img {
-  width: 100%;     /* A kép szélessége */
-  height: 500px;   /* A kép magassága */
-  object-fit: cover; /* A kép kitöltse a rendelkezésre álló teret, miközben megőrzi az arányait */
+header {
+    text-align: center;
+    font-size: 2rem;
+    padding: 20px 0;
+    font-weight: bold;
+}
+
+.higlight {
+    margin: 20px 0;
+}
+
+.higlight .carousel-inner img {
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.tartalom {
+    padding: 20px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    color: #777;
+    font-size: 0.9rem;
 }
