@@ -1,37 +1,57 @@
-export class KosarElem {
+export default class KosarElem {
 
-    #adatok;
-    #szoloElem;
-    #torolGOMB
-    #index
-    constructor(adatok, szoloElem, index) {
-        this.#adatok = adatok;
-        this.#szoloElem = szoloElem;
-        this.#index = index;
-        this.megjelenit()
+   constructor(item, szuloElem, index) {
+    this.item = item;
+    this.index = index;
+    this.szuloElem = szuloElem;
+    this.render();
+  }
 
-    }
+  render() {
+    const termek = this.item.termek;
+    const index = this.index;
 
-
-
-    megjelenit() {
-        const card = document.createElement('div');
-        card.classList.add('col-md-12', 'mb-4');
-        card.innerHTML = `
-        <div class="card">
-          
-            <div class="card-body">
-            <h5 class="card-title">${this.#adatok.nev}</h5>
-        
-            <p class="card-text"><strong>Ár: ${this.#adatok.Ar} Ft</strong></p>
-            <button class="btn btn-primary">Töröl</button>
-            </div>
+    this.szuloElem.innerHTML += `
+      <div class="d-flex justify-content-between align-items-center border-bottom py-2 kosar-item" data-index="${index}">
+        <div><strong>${termek.nev}</strong> - ${termek.ar} Ft</div>
+        <div>
+          <button class="btn btn-sm btn-secondary" data-index="${index}">+</button>
+          <span>${this.item.mennyiseg}</span>
+          <button class="btn btn-sm btn-warning" data-index="${index}">-</button>
+          <button class="btn btn-sm btn-danger" data-index="${index}">Törlés</button>
         </div>
-        `;
+      </div>
+    `;
+    this.addEventListeners(index);
+  }
 
-        this.#szoloElem.appendChild(card);
+  addEventListeners(index) {
+    const plusButton = this.szuloElem.querySelector(`[data-index="${index}"].btn-secondary`);
+    const minusButton = this.szuloElem.querySelector(`[data-index="${index}"].btn-warning`);
+    const deleteButton = this.szuloElem.querySelector(`[data-index="${index}"].btn-danger`);
 
+    if (plusButton) {
+      plusButton.addEventListener('click', () => this.novel(index));
     }
 
+    if (minusButton) {
+      minusButton.addEventListener('click', () => this.csokkent(index));
+    }
 
+    if (deleteButton) {
+      deleteButton.addEventListener('click', () => this.torles(index));
+    }
+  }
+
+  novel(index) {
+    window.dispatchEvent(new CustomEvent("novel", { detail: index }));
+  }
+
+  csokkent(index) {
+    window.dispatchEvent(new CustomEvent("csokkent", { detail: index }));
+  }
+
+  torles(index) {
+    window.dispatchEvent(new CustomEvent("torles", { detail: index }));
+  }
 }

@@ -1,33 +1,62 @@
-import  KosarElem  from "./KosarElem.js";
+import KosarElem from "./KosarElem.js";
 
 
-export class Kosar {
-    
-    #KosarLista = [];
-    #szoloELEM;
-    constructor() {
-        this.#KosarLista = [];
-        this.#szoloELEM = document.querySelector(".kosar");
-        this.megjelenit();
-        this.hozaAd();
+export default class Kosar {
 
+  #lista = [];
+
+  constructor() {
+    this.kosarElem = document.querySelector("#kosarModalContent");
+    this.kosarCountElem = document.querySelector("#kosarCount");
+    this.#setupListener();
+    this.frissitMegjelenites();
+  }
+
+  #setupListener() {
+    window.addEventListener("kosarba", (event) => {
+      const termek = event.detail;
+      const existingItem = this.#lista.find(item => item.termek.id === termek.id);
+      if (existingItem) {
+        existingItem.mennyiseg++;
+      } else {
+        this.#lista.push({ termek, mennyiseg: 1 });
+      }
+      this.frissitMegjelenites();
+    });
+
+    window.addEventListener("novel", (event) => {
+      const index = event.detail;
+      this.#lista[index].mennyiseg++;
+      this.frissitMegjelenites();
+    });
+
+    window.addEventListener("csokkent", (event) => {
+      const index = event.detail;
+      if (this.#lista[index].mennyiseg > 1) {
+        this.#lista[index].mennyiseg--;
+        this.frissitMegjelenites();
+      }
+    });
+
+    window.addEventListener("torles", (event) => {
+      const index = event.detail;
+      this.#lista.splice(index, 1);
+      this.frissitMegjelenites();
+    });
+  }
+
+  frissitMegjelenites() {
+    // Csak az új vagy változott elemeket rendereljük újra
+    const kosarElem = this.kosarElem;
+    kosarElem.innerHTML = "";
+    if (this.#lista.length === 0) {
+      kosarElem.innerHTML = "<p>A kosár üres.</p>";
+    } else {
+      this.#lista.forEach((item, index) => {
+        new KosarElem(item, kosarElem, index); // Add event listener for each item
+      });
     }
-    megjelenit() {
-        console.log(this.#szoloELEM);
 
-        this.#szoloELEM.innerHTML = "";
-        for (let index = 0; index < this.#KosarLista.length; index++) {
-            const element = this.#KosarLista[index];
-            new KosarElem(element, this.#szoloELEM, index);
-        }
-    }
-    torol() { }
-    hozaAd() {
-        window.addEventListener("kosarba", () => {
-            console.log(event.detail);
-            this.#KosarLista.push(event.detail);
-            console.log(this.#KosarLista)
-            this.megjelenit();
-        });
-    }
+    this.kosarCountElem.textContent = this.#lista.reduce((total, item) => total + item.mennyiseg, 0);
+  }
 }

@@ -1,22 +1,20 @@
-import  Termek  from "./Termek.js";
-import  termekLista  from "./termekLista_2.js";
+import Termek from "./Termek.js";
+import { termekLista } from "./termekLista_2.js";
 
-export class TermekLista{
+export default class TermekLista {
     #szuloElem;
-    #termekLista= [];
-    constructor(){
-        this.#termekLista = termekLista;
-        this.#szuloElem = document.getElementById('carCards');
+
+    constructor() {
+        this.#szuloElem = document.querySelector(".tartalom");
         this.megjelenit();
     }
 
-    megjelenit(){
-    // Iteráljuk a termékeket és létrehozzuk a kártyákat
-        for (let i = 0; i < termekLista.length; i++) {
-            new Termek(termekLista[i], this.#szuloElem, i);            
-        }
-    }
+    megjelenit() {
+        this.#szuloElem.innerHTML = `<div class="row"></div>`;
+        const sorElem = this.#szuloElem.querySelector(".row");
 
-  
-  
+        termekLista.forEach((termek, i) => {
+            new Termek(termek, sorElem, i);
+        });
+    }
 }

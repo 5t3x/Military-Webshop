@@ -48,21 +48,3 @@ footer {
   color: #777;
   font-size: 0.9rem;
 }
-
-#scrollToTopBtn {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  padding: 10px 15px;
-  font-size: 50px;
-  background-color: #007bff;
-  color: white;
-  border: 5px solid black;
-  border-radius: 50%;
-  cursor: pointer;
-  display: block; /* Kezdetben rejtett */
-}
-
-#scrollToTopBtn:hover {
-  background-color: #0056b3;
-}
