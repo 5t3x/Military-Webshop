@@ -28,6 +28,12 @@ header {
   color: #2a2a2a;
 }
 
+header img {
+  width: 77px;
+  height: auto;
+  vertical-align: left;
+}
+
 .higlight {
   margin: 20px 0;
 }
