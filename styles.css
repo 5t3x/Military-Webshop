@@ -16,7 +16,7 @@ main {
   background-attachment: fixed;
   background-position: center;
   background-color: rgb(240, 238, 238);
-  border-radius: 10px;
+  border-radius: 15px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
 
@@ -63,17 +63,73 @@ footer {
 }
 
 body.darkmode {
-  background-color: #121212;
+  background-color: #000000 !important;
+  background-image: none !important;
   color: white;
 }
 
-body.darkmode .card {
-  background-color: #1e1e1e;
+body.darkmode main {
+  background-color: #000000;
   color: white;
-  border: 1px solid #333;
+  box-shadow: 0 0 20px white;
+}
+
+body.darkmode header {
+  color: white;
 }
 
 body.darkmode .navbar {
-  background-color: #1e1e1e;
+  background-color: #000000 !important;
+  box-shadow: 0 0 10px white;
+  border-radius: 15px;
+}
+
+body.darkmode .navbar .nav-link,
+body.darkmode .navbar-brand {
+  color: white !important;
+}
+
+body.darkmode .navbar .nav-link:hover,
+body.darkmode .navbar .nav-link.active {
+  color: white !important;
+}
+
+body.darkmode .card {
+  background-color: #000000;
   color: white;
+  border: 1px solid #000000;
+  box-shadow: 0 0 10px white;
+}
+
+body.darkmode .modal-content,
+body.darkmode .offcanvas {
+  background-color: #000000;
+  color: white;
+  border-color: white;
+  box-shadow: 0 0 10px white;
+}
+
+body.darkmode .modal-header,
+body.darkmode .modal-footer,
+body.darkmode .offcanvas-header,
+body.darkmode .offcanvas-footer {
+  border-color: white;
+}
+
+body.darkmode .btn-close {
+  filter: invert(1); 
+}
+
+body.darkmode .btn-primary {
+  background-color: #000000;
+  border-color: #000000;
+  color: white;
+  box-shadow: 0 0 5px white;
+}
+
+body.darkmode .btn-secondary {
+  background-color: #000000;
+  border-color: #000000;
+  color: white;
+  box-shadow: 0 0 5px white;
 }
