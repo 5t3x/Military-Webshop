@@ -1,8 +1,6 @@
 import KosarElem from "./KosarElem.js";
 
-
 export default class Kosar {
-
   #lista = [];
 
   constructor() {
@@ -15,7 +13,9 @@ export default class Kosar {
   #setupListener() {
     window.addEventListener("kosarba", (event) => {
       const termek = event.detail;
-      const existingItem = this.#lista.find(item => item.termek.id === termek.id);
+      const existingItem = this.#lista.find(
+        (item) => item.termek.id === termek.id
+      );
       if (existingItem) {
         existingItem.mennyiseg++;
       } else {
@@ -46,17 +46,30 @@ export default class Kosar {
   }
 
   frissitMegjelenites() {
-    // Csak az új vagy változott elemeket rendereljük újra
     const kosarElem = this.kosarElem;
     kosarElem.innerHTML = "";
+
     if (this.#lista.length === 0) {
       kosarElem.innerHTML = "<p>A kosár üres.</p>";
     } else {
       this.#lista.forEach((item, index) => {
-        new KosarElem(item, kosarElem, index); // Add event listener for each item
+        new KosarElem(item, kosarElem, index);
       });
     }
 
-    this.kosarCountElem.textContent = this.#lista.reduce((total, item) => total + item.mennyiseg, 0);
+    const osszegElem = document.getElementById("kosarOsszeg");
+    if (osszegElem) {
+      const osszeg = this.#lista.reduce(
+        (acc, item) => acc + item.termek.ar * item.mennyiseg,
+        0
+      );
+      osszegElem.textContent = `Összesen: ${osszeg.toLocaleString("hu-HU")} Ft`;
+    }
+
+    this.kosarCountElem.textContent = this.#lista.reduce(
+      (total, item) => total + item.mennyiseg,
+      0
+    );
   }
+
 }
