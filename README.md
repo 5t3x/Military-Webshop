@@ -47,41 +47,41 @@ Ez egy egyszerű **Military Webshop**, amely **HTML**, **CSS (Bootstrap)** és *
 Az alábbiakban egy alap UML diagram látható, amely leírja a **MILITARY WEBSHOP** osztályait és azok struktúráját. A **Product**, **Cart**, **Webshop** és **Termek** osztályok kölcsönhatásba lépnek, hogy lehetővé tegyék a felhasználók számára a termékek és a kosár adataik kezelését.
 
 ```plaintext
-+--------------------+        +--------------------+         +---------------------+
-|      Termek        |        |       Cart         |         |       Webshop       |
-+--------------------+        +--------------------+         +---------------------+
-| - id: int          |        | - products: array  |         | - products: array   |
-| - nev: string      |        | - total: float     |         | - cart: Cart        |
-| - leiras: str      |        +--------------------+         +---------------------+
-| - ar: float        |        | + addProduct()     |         | + addProduct()      |
-| - kategoria: string|        | + removeProduct()  |         | + displayProducts() |
-+--------------------+        | + calculateTotal() |         | + sortProducts()    |
-| + displayTermek()  |        | + displayCart()    |         | + viewCart()        |
-+--------------------+        +--------------------+         +---------------------+
++-------------------+        +-------------------+        +----------------------+
+|     Termek        |        |     Termekek      |        |      termekLista     |
++-------------------+        +-------------------+        +----------------------+
+| - #adatok         |        | - lista           |        | [ { id, nev, ... } ] |
+| - #szuloElem      |        +-------------------+        +----------------------+
+| - #index          |        | + constructor()   |
++-------------------+        | + megjelenit()    |
+| + megjelenit()    |        +-------------------+
++-------------------+
 
++-------------------+        +-------------------+
+|      Kosar        |<>------|     KosarElem     |
++-------------------+        +-------------------+
+| - #lista          |        | - item            |
+| - kosarElem       |        | - index           |
+| - kosarCountElem  |        | - szuloElem       |
++-------------------+        +-------------------+
+| + constructor()   |        | + constructor()   |
+| + frissitMegjelenites()|   | + render()        |
++-------------------+        | + addEventListeners() |
+                             +-------------------+
 
-+--------------------+
-|      Termekek      |
-+--------------------+
-| - TermekLista: array|
-| - szElem: HTMLDom elem|
-+--------------------+
-| + displayTermek()  |
-+--------------------+
++-------------------+        +-------------------+
+|    Kategoria      |        |     Highlight      |
++-------------------+        +-------------------+
+| + megjelenit()    |        | + constructor()    |
+| + megjelenitTermekek()|    | + megjelenit()     |
++-------------------+        +-------------------+
 
-+--------------------+
-|    TermekLista     |
-+--------------------+
-| - Lista[]: array   |
-+--------------------+
-
-+------------------------+
-|       Highlight        |
-+------------------------+
-|                        |
-+------------------------+
-| + Highlight()          |
-+------------------------+
++-------------------+
+|      Gomb         |
++-------------------+
+| + constructor()   |
+| + initScrollButton() |
++-------------------+
 
 ---
 

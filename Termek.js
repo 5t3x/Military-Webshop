@@ -20,7 +20,7 @@ export default class Termek {
                         <div class="card-body">
                                 <h5 class="card-title">${this.#adatok.nev}</h5>
                                 <p class="card-text">${this.#adatok.leiras}</p>
-                                <p class="card-text">${this.#adatok.ar}</p>
+                                <p class="card-text">${this.#adatok.ar} Ft</p>
                                 <button class="btn btn-primary kosarba" id="kosarba${this.#index}">Kosárba</button>
                         </div>
                 </div>`
