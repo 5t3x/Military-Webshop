@@ -42,9 +42,38 @@ header {
   padding: 20px 0;
 }
 
+article {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  justify-content: center;
+  justify-items: center;
+}
+
+div.card.text-center.mb-3 {
+  margin: 10px;
+}
+
 footer {
   text-align: center;
   padding: 20px 0;
   color: #777;
   font-size: 0.9rem;
+}
+
+body.darkmode {
+  background-color: #121212;
+  color: white;
+}
+
+body.darkmode .card {
+  background-color: #1e1e1e;
+  color: white;
+  border: 1px solid #333;
+}
+
+body.darkmode .navbar {
+  background-color: #1e1e1e;
+  color: white;
 }

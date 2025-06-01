@@ -284,28 +284,28 @@ export const termekLista = [
         nev: "Taktikai Jármű Modell",
         ar: 25000,
         leiras: "Taktikai, terepjáró modell, működő lánctalppal",
-        kategoria: "Járművek"
+        kategoria: "BlackMarket"
     },
     {
         id: 42,
         nev: "Katonai Terepjáró",
         ar: 500000,
         leiras: "Taktikai terepjáró, katonai jármű, teljes felszereléssel",
-        kategoria: "Járművek"
+        kategoria: "BlackMarket"
     },
     {
         id: 43,
         nev: "M1 Abrams Tank Modell",
         ar: 100000,
         leiras: "Részletes modell, működő lánctalpú Abrams tank",
-        kategoria: "Járművek"
+        kategoria: "BlackMarket"
     },
     {
         id: 44,
         nev: "Taktikai Ágyú",
         ar: 150000,
         leiras: "Miniatűr taktikai ágyú modell, precíz kidolgozással",
-        kategoria: "Járművek"
+        kategoria: "BlackMarket"
     },
     // BlackMarket
     {
