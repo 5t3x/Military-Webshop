@@ -6,11 +6,11 @@ export default class Kosar {
   constructor() {
     this.kosarElem = document.querySelector("#kosarModalContent");
     this.kosarCountElem = document.querySelector("#kosarCount");
-    this.#setupListener();
+    this.#kosarKezelo();
     this.frissitMegjelenites();
   }
 
-  #setupListener() {
+  #kosarKezelo() {
     window.addEventListener("kosarba", (event) => {
       const termek = event.detail;
       const existingItem = this.#lista.find(

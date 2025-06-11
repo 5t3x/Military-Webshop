@@ -3,10 +3,10 @@ export default class KosarElem {
     this.item = item;
     this.index = index;
     this.szuloElem = szuloElem;
-    this.render();
+    this.termekIndex();
   }
 
-  render() {
+  termekIndex() {
     const termek = this.item.termek;
     const index = this.index;
 
